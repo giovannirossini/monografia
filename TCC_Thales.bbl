@@ -1,0 +1,151 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[ADAFRUIT 2017]{analogica}
+\abntrefinfo{ADAFRUIT}{ADAFRUIT}{2017}
+{ADAFRUIT. \emph{MCP3008}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008}.
+  Acesso em: 07 mai. 2017.}
+
+\bibitem[Agnol 2014]{usp}
+\abntrefinfo{Agnol}{AGNOL}{2014}
+{AGNOL, M. S.~D. \emph{Projeto de Disciplina para aprendizado em Linux e
+  Raspberry Pi}. São Carlos: Universidade de São Paulo, 2014.}
+
+\bibitem[ANALOGIC{ }DEVICE 2017]{analogic}
+\abntrefinfo{ANALOGIC{ }DEVICE}{ANALOGIC{ }DEVICE}{2017}
+{ANALOGIC{ }DEVICE. \emph{SparkFun Single Lead Heart Rate Monitor - AD8232}.
+  2017.
+Dispon{\'\i}vel em: \url{https:www.sparkfun.com/products/12650}. Acesso em: 07
+  nov. 2017.}
+
+\bibitem[Boylestad e Nashelsky 2004]{boy}
+\abntrefinfo{Boylestad e Nashelsky}{BOYLESTAD; NASHELSKY}{2004}
+{BOYLESTAD, R.~L.; NASHELSKY, L. \emph{Dispositivos eletr{\^o}nicos e teoria de
+  circuitos}. 8. ed. São Paulo: Prentice-Hall do Brasil, 2004.}
+
+\bibitem[CATÁLAGO{ }HOSPITAL 2017]{HS15}
+\abntrefinfo{CATÁLAGO{ }HOSPITAL}{CATÁLAGO{ }HOSPITAL}{2017}
+{CATÁLAGO{ }HOSPITAL. \emph{HS15 SIMULADOR DE EXG C/12 VARIAÇÕES PARA
+  ELETROCARDIOGRAFO MILTICANAL}. 2017.
+Dispon{\'\i}vel em:
+  \url{http://catalogohospitalar.com.br/hs15-simulador-de-ecg-c-12-variacoes-para-eletrocardiografo-multicanal.html}.
+  Acesso em: 20 mai. 2017.}
+
+\bibitem[EBAH 2017]{ebah}
+\abntrefinfo{EBAH}{EBAH}{2017}
+{EBAH. \emph{ECG: Aula de Eletrocardiograma}. 2017.
+Dispon{\'\i}vel em:
+  \url{https:www.ebah.com.br/content/ABAAAAjMgAD/eletrocardiogram\textgreater}.
+  Acesso em: 07 mai. 2017.}
+
+\bibitem[FIBRA{ }CIRÚRGICA 2017]{Site22}
+\abntrefinfo{FIBRA{ }CIRÚRGICA}{FIBRA{ }CIRÚRGICA}{2017}
+{FIBRA{ }CIRÚRGICA. \emph{Eletrodo 3M Descartável Espuma 2223BRQ Pacote com
+  50UN}. 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.fibracirurgica.com.br/eletrodo-descartavel-espuma-2223brq-pacote-c-50-unidades-3m/p}.
+  Acesso em: 28 out. 2017.}
+
+\bibitem[FILIPEFLOP 2017]{raspb}
+\abntrefinfo{FILIPEFLOP}{FILIPEFLOP}{2017}
+{FILIPEFLOP. \emph{Raspberry Pi}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.filipeflop.com/blog/tutorial-raspberry-pi-linux/}. Acesso
+  em: 23 mai. 2017.}
+
+\bibitem[FLUKE{ }BIOMEDICAL 2017]{fluke}
+\abntrefinfo{FLUKE{ }BIOMEDICAL}{FLUKE{ }BIOMEDICAL}{2017}
+{FLUKE{ }BIOMEDICAL. \emph{ProSim 8 Vital Signs Patient Monitor Simulator}.
+  2017.
+Dispon{\'\i}vel em:
+  \url{https:www.flukebiomedical.com/biomedical/usen/patient-simulators/prosim-8-vital-signs-simulator.htm?PID=72624}.
+  Acesso em: 14 mai. 2017.}
+
+\bibitem[GUYTON e HALL 2011]{guyton}
+\abntrefinfo{GUYTON e HALL}{GUYTON; HALL}{2011}
+{GUYTON, A.~C.; HALL, J.~E. \emph{Tratado de Fisiologia M{\'{e}}dica}.
+  Missisipi: University of Missisipi Medicai Center, 2011.}
+
+\bibitem[JEMERY{ }LINDSAY 2017]{ras}
+\abntrefinfo{JEMERY{ }LINDSAY}{JEMERY{ }LINDSAY}{2017}
+{JEMERY{ }LINDSAY. \emph{Turning GIO pins high and low on a Raspberry Pi 3
+  using .NET Core 2 and Ubuntu}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://jeremylindsayni.wordpress.com/2017/04/05/turning-gpio-pins-high-and-low-on-a-raspberry-pi-3-using-net-core-2-and-ubuntu}.
+  Acesso em: 12 mai. 2017.}
+
+\bibitem[SANTOS 2014]{ronald}
+\abntrefinfo{SANTOS}{SANTOS}{2014}
+{SANTOS, R.~D. \emph{Projeto de um eletrocardíografo de alta resolução para
+  diagnóstico de cardopaticas ventriculares atriais}. Manaus: Universidade
+  Estado do Amazonas, 2014.}
+
+\bibitem[Sarnadas e Silva 2016]{pds}
+\abntrefinfo{Sarnadas e Silva}{SARNADAS; SILVA}{2016}
+{SARNADAS, R.; SILVA, H. \emph{Relatório de PDS – ECG}. 2016.
+Dispon{\'\i}vel em: \url{http://users.isr.ist.utl.pt}. Acesso em: 06 nov.
+  2016.}
+
+\bibitem[Silva 2008]{silva}
+\abntrefinfo{Silva}{SILVA}{2008}
+{SILVA, M.~C. \emph{Sistema para avaliação da conformidade de
+  Eletrocardiógrafos}. Rio de Janeiro: UNICAMP, 2008.}
+
+\bibitem[Sornmo 2005]{sornmo}
+\abntrefinfo{Sornmo}{SORNMO}{2005}
+{SORNMO, L. \emph{Biolectrical Signal Processing in Cardiac and Neurological
+  Applications}. 1. ed. USA: Elsevier Academic Press, 2005.}
+
+\bibitem[Souza 2015]{android}
+\abntrefinfo{Souza}{SOUZA}{2015}
+{SOUZA, P. \emph{Sistema de aquisição de sinais EMG e ECG para plataforma
+  Android}. Recife: UFPE, 2015.}
+
+\bibitem[Souza 2008]{souza}
+\abntrefinfo{Souza}{SOUZA}{2008}
+{SOUZA, P. V.~E. \emph{Sistema de Aquisição de EMG e ECG para plataforma
+  Android}. Recife: Universidade Federal de Pernambuco, 2008.}
+
+\bibitem[Sugiyama, Ferrari e Reis 2015]{sugi}
+\abntrefinfo{Sugiyama, Ferrari e Reis}{SUGIYAMA; FERRARI; REIS}{2015}
+{SUGIYAMA, C.~K.; FERRARI, G.~R.; REIS, H. G.~P. \emph{Sistema de aquisição
+  de sinal de eletrocardiograma com aplicativo Android}. Paraná: UTFPR, 2015.}
+
+\bibitem[TANENBAUM 2003]{tanen}
+\abntrefinfo{TANENBAUM}{TANENBAUM}{2003}
+{TANENBAUM, A.~S. \emph{Redes de Computadores}. 4. ed. Brasil: Editora Campus,
+  2003.}
+
+\bibitem[Thaler 2012]{thaler}
+\abntrefinfo{Thaler}{THALER}{2012}
+{THALER, M. \emph{The Only EKG Book You’ll Ever Need}. Philadelphia:
+  Lippincott Williams \& Wilkins, 2012.}
+
+\bibitem[TOCCI, Widner e Moss 2011]{digi}
+\abntrefinfo{TOCCI, Widner e Moss}{TOCCI; WIDNER; MOSS}{2011}
+{TOCCI, J.~R.; WIDNER, N.~S.; MOSS, G.~L. \emph{Sistemas Digitais.
+  Princ{\'{i}}pios e Aplica{\c{c}}{\~{a}}o}. 11. ed. S{\~{a}}o Paulo: Pearson
+  Prentice Hall, 2011.}
+
+\bibitem[Veloso 2004]{veloso}
+\abntrefinfo{Veloso}{VELOSO}{2004}
+{VELOSO, R.~P. \emph{Protótipo de um Eletromiógrafico Digital}. Blumenau:
+  Universidade Regional de Blumenau, 2004.}
+
+\bibitem[View 2008]{vier}
+\abntrefinfo{View}{VIEW}{2008}
+{VIEW, A.~P. \emph{Sistema de Eletrocardiograma (ECG) com reconhecimento de
+  arritmias}. Curitiba: Universidade Positivo, 2008.}
+
+\bibitem[Webster 1998]{webster}
+\abntrefinfo{Webster}{WEBSTER}{1998}
+{WEBSTER, J.~G. \emph{Medicall Instrumentation Application and Design}. USA:
+  Johny Wiley \& Sons, 1998.}
+
+\end{thebibliography}
