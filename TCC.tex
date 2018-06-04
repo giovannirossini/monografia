@@ -277,47 +277,85 @@ As mesmas pessoas que praticam este ato por sua vez saem impunes, pois como o za
 %\rhead{\thepage}
 %\fancyfoot[C]{}
 
-\hspace*{0.8cm}Vários termos e conceitos vêm sendo descritos para tarefas associadas a detecção de sentimentos, diante da ascensão deste tema. A seguir é apresentada cada uma delas: 
+\hspace*{0.8cm}Vários termos e conceitos vêm sendo descritos para tarefas associadas a detecção e análise de sentimentos, diante da ascensão deste tema. A seguir apresentamos cada uma delas: 
 
 Polaridade: Representa o grau de positividade e negatividade de um texto. Alguns métodos tratam a polaridade como um resultado discreto binário (positivo ou negativo) ou ternário (positivo, negativo ou neutro). Por exemplo, a frase “Como você está bonita hoje” é positiva e a frase “Hoje é um péssimo dia” é negativa, já a frase “Hoje é 21 de Outubro” não possui polaridade e normalmente é classificada como neutra.
 
-Força do sentimento: É a representação da intensidade de um sentimento ou da polaridade, também é uma forma de saída de alguns métodos. Usualmente é um ponto flutuante entre -1 e 1 que torna, muitas vezes, necessário o uso de um limiar estabelecido de acordo com as características dos objetos que se quer isolar para identificar a neutralidade de uma sentença.
+Força do Sentimento: É a representação da intensidade de um sentimento ou da polaridade. Também é uma forma de saída de alguns métodos. Normalmente é um ponto flutuante entre -1 e 1 o que torna, muitas vezes, necessário o uso de um valor inicial estabelecido anteriormente de acordo com as características dos objetos que se quer isolar para identificar se uma sentença é neutra ou não.
 
-Sentimento/Emoção: Indica um sentimento específico presente em uma mensagem (ex.: raiva, surpresa, felicidade, etc.). Alguns métodos são capazes de identificar quais sentimentos em específico uma sentença representa. Como exemplo o método léxico Emolex \cite{Mohammad}, na qual é baseada a partir da avaliação de sentenças para 9 sentimentos diferentes: alegria, tristeza, raiva, medo, confiança, repugnância, surpresa, antecipação, positivo, negativo.
+Sentimento/Emoção: Indica um sentimento específico presente em uma mensagem (raiva, surpresa, felicidade, etc.). Alguns métodos são capazes de identificar isoladamente os sentimentos que uma sentença representa. Como exemplo o método léxico Emolex \cite{Mohammad}, na qual é baseada a partir da avaliação de sentenças para 9 sentimentos diferentes: alegria, tristeza, raiva, medo, confiança, repugnância, surpresa, antecipação, positivo, negativo.
 
-Subjetividade vs. Objetividade: Uma sentença objetiva possui normalmente um fato ou uma informação, enquanto sentenças subjetivas expressam sentimentos pessoais e opiniões. Algumas técnicas utilizam a análise da objetividade para estimar se compensa realizar a análise de sentimentos. Portanto entender se um conjunto de dados possui mais sentenças objetivas ou subjetivas pode influenciar diretamente os resultados. Cabe ressaltar que textos informais (ex.: coletados de redes sociais) tendem a ser mais subjetivos que textos formais (ex.: coletados de notícias).
+Subjetividade vs. Objetividade: Uma sentença objetiva possui normalmente um fato ou uma informação, enquanto sentenças subjetivas expressam sentimentos pessoais e opiniões. Algumas técnicas utilizam a análise da objetividade para estimar se compensa realizar a análise de sentimentos. Portanto entender se um conjunto de dados possui mais sentenças objetivas ou subjetivas pode influenciar diretamente os resultados. Cabe ressaltar que textos informais, como os coletados de redes sociais, tendem a ser mais subjetivos que textos formais, aqueles como os de jornais e revistas.
 
 \newpage
+\subsection{MÉTODOS DE PESQUISA}
+Os métodos de pesquisa nessa área são divididas em diferentes níveis de granularidade conforme a tarefa de detecção de sentimentos nos textos. Quanto maior a granularidade, menos específica é a classificação (\citeauthor{Bevenuto}).
+
+\bigskip 
+A seguir uma breve explanação sobre algumas frentes:
+
+\medskip
+\begin{enumerate}
+\item Estado emocional: A identificação do estado emocional a partir de informações contidas no texto é uma das principais frentes de pesquisa;
+\item Análise de Sentimentos para Comparação: Em diversos casos usuários não informam a opinião direta sobre um produto ou pessoa, no entanto, eles fornecem opiniões comparativas em sentenças como “Este computador Apple aparenta ser bem melhor do que aquele Asus”;
+\item Nível de Documento: Neste nível de ranularidade, a classificação de sentimentos ocorre com a análise de um texto como um todo. Ou seja, nesse nível, assume-se que todo o texto está relacionado a um único assunto que possui certa polaridade;
+\item Nível de Sentença: É neste nível de análise que este trabalho se dedica, pois um único documento pode conter múltiplas opiniões ou mesmo entidades. Neste caso é assumido que o texto foi dividido em frases ou sentenças que possam conter uma opinião individualmente;
+\item Nível de Palavra ou Dicionário: Neste método de pesquisa os trabalhos focam em otimizar os Léxicos de sentimentos existentes na literatura;
+\item Nível de Aspecto: Nesse nível de granularidade, uma sentença pode ser julgada por várias entidades e pode conter múltiplos sentimentos associados a ela.
+\end{enumerate}
+
+\subsection{ATRIBUIÇÃO DA POLARIDADE DO SENTIMENTO}
+"Análise de polaridade é a identificaçao do sentimento expressado nos textos por palavras opinativas, classificando-os por ser positivos, negativos ou em casos onde a opiniao nao é explicíta, a opiniao é considerada neutra" \cite{Robson}. A análise polar é vantajosa por deixar mais objetivo, simples e rápida a percepção geral das opiniões coletadas. Tornando assim mais ágil a tomada de decisão em situações de crise, por ser classificada em apenas três opções, onde não se tem a necessidade de classificações mais profundas.  Por exemplo, a sentença “Esse hotel, apesar de possuir um ótimo quarto, tem um atendimento péssimo!” possui duas diferentes polaridades associadas a “quarto” e “atendimento” para o mesmo hotel. Enquanto “quarto” é considerado positivo, atendimento” pode ser analisado de forma negativa. 
+
+\bigskip
+Para determinar a polaridade de cada opinião, existem duas formas principais:
+
+\medskip
+\begin{enumerate}
+\item Aprendizagem supervisionada: Utiliza de sentenças previamente rotuladas e treinos para a criação de um modelo de comparação. \cite{Robson}
+\item Aprendizagem não supervisionada: Não necessita de sentenças rotuladas ou de treinamento, tornando a aplicação mais abstrata e não restringindo-a a contextos. \cite{Robson}
+\end{enumerate}
+
 \subsection{OPINIÃO PUBLICA E MIDIAS SOCIAIS}
-\hspace*{0.8cm}Com o avanço tecnológico a dissipação e a evolução dos portais especializados, blogs e redes sociais se tornam grandes meios de comunicação na Web 2.0 e com isso uma grande  5 quantidade opiniões, desde classificações e recomendações a resenhas e artigos, estão acessíveis e são acessados diariamente por uma grande parte da população mundial. Em uma visão sociológica, a opinião pública pode ser entendida como dinâmica, reativa e coletiva. Nos quais os públicos são moldados por técnicas que os representam, incluindo pesquisas, textos e outras formas de expressão pública \cite{Perrin}. Dessa forma, atualmente, torna-se lento e longo o processo de pesquisa das opiniões que podem ser obtidas na internet. Entretanto esse processo se tornou objeto de uma disciplina chamada “análise de sentimento”. Nesta disciplina o estudo de opiniões, identificação e extração de sentimentos e emoções expressas em textos na web é essencial para definirmos este conceito de “análise de sentimentos”.
+\hspace*{0.8cm}Com o avanço tecnológico a dissipação e a evolução dos portais especializados, como blogs e redes sociais, se tornaram grandes meios de comunicação na Web 2.0 e com isso uma grande quantidade de opiniões, desde classificações e recomendações, a resenhas e artigos, estão acessíveis e são acessados diariamente por uma grande parte da população mundial. Em uma visão sociológica, a opinião pública pode ser entendida como dinâmica, reativa e coletiva. Nos quais os públicos são moldados por técnicas que os representam, incluindo pesquisas, textos e outras formas de expressão pública \cite{Perrin}. Dessa forma, atualmente, tornam-se lento e longo os processos de pesquisa das opiniões que podem ser obtidas na internet. Entretanto esses processos se tornaram objeto de uma disciplina chamada “análise de sentimento” a qual se aplica no estudo de opiniões, identificação e extração de sentimentos e emoções expressas em textos na web. O que é essencial para definirmos este conceito de “análise de sentimentos”.
 
 \subsection{ONTOLOGIA}
 
-\hspace*{0.8cm}Ontologia vem do grego e consiste em uma filosofia que estuda o que é inerente ao ser, sua existência e a realidade. “Qualquer estudo da opinião pública deve considerar o status ontológico do público que está sendo representado” \cite{Perrin}. Segundo Cicortas, Iordan e Fortis \citeyear{Cicortas}, sistemas de informação projetados para interpretar a linguagem humana estão em ascensão e que, com a mínima intervenção humana, serão capazes de entender as emoções, intenções e opiniões de um autor. Os autores em seu artigo chamado \textit{Considerations on Construction Ontologies}, caracterizam as dificuldades que ferramentas automatizadas têm em interpretar as informações e analisam as possibilidades do uso da ontologia para resolver tais questões. Em busca de melhores práticas para a construções ontológicas, os autores Rosner e Kunze \citeyear{Kunze} expõem suas experiências e perguntas sobre tais construções e detalham vários métodos para o aproveitamento das restrições da linguagem.
+\hspace*{0.8cm}Ontologia vem do grego ontos: "ente" e "logoi", "ciência do ser". Consiste em uma filosofia que estuda o que é inerente ao ser, sua existência e a realidade. “Qualquer estudo da opinião pública deve considerar o status ontológico do público que está sendo representado” \cite{Perrin}. Segundo Cicortas, Iordan e Fortis \citeyear{Cicortas}, sistemas de informação projetados para interpretar a linguagem humana estão em ascensão e que, com a mínima intervenção humana, serão capazes de entender as emoções, intenções e opiniões de um autor. Os autores em seu artigo chamado \textit{Considerations on Construction Ontologies}, caracterizam as dificuldades que as ferramentas automatizadas têm em interpretar as informações e analisam as possibilidades do uso da ontologia para resolver essas questões. Em busca de melhores práticas para construções ontológicas, os autores Rosner e Kunze \citeyear{Kunze} expõem suas experiências e perguntas sobre tais construções e detalham vários métodos para o aproveitamento das restrições da linguagem.
 
 \newpage
 \subsection{MÉTODOS DE ANÁLISE DE SENTIMENTOS}
 
 \hspace*{0.8cm}Existem inúmeros modos de realizar análise de sentimentos. Devido as técnicas de previsão de sentimentos, esses métodos se diferem com o uso do aprendizado de máquinas, dicionários, processamento e escalas. Nosso trabalho focará nos métodos que buscam a detecção em pequenas subdivisões, assumindo que cada frase é capaz de possuir um único  6 sentimento central \cite{Liu}. Em seguida, apresentaremos os métodos de análise de sentimentos que pretendemos utilizar neste trabalho e que serão abordados na seção de Métodos e Materiais.
 
+\medskip
 LIWIC que é uma ferramenta para análise de texto que, segundo Tausczik e Pennebaker \citeyear{Tausczik}, consegue estimar componentes psicológicos, estruturais e emocionais de um texto no uso de um dicionário onde as palavras estão categorizadas, podendo assim detectar a pontuação de polaridade positiva ou negativa.
 
+\medskip
 SentiStrength consegue estimar a força do sentimento positivo e negativo em textos curtos, até em linguagem informal. Tem precisão de nível humano classificando de -5 (extremamente negativo) a 5 (extremamente positivo).
 
+\medskip
 SentiWordNet é um recurso léxico para a mineração de opinião. Ele atribui a cada sincronia três pontuações de sentimento: positivo, negativo e neutro.
 
+\medskip
 SASA é uma ferramenta de análise de sentimentos com modelos treinados em dados do Twitter.
 
+\medskip
 Happiness Index, segundo Dodds and Danforth \citeyear{Dodds}, é uma escala de sentimentos que utiliza o Affective Norms for English Words (ANEW). O ANEW é uma coleção de 1.034 palavras associadas as dimensões afetivas de sentimentos. O Happiness Index foi gerado com base no ANEW e pontua um texto com valores entre 1 e 9, que indica o quão “feliz” o texto é. Após os cálculos efetuados em base da quantidade de vezes que cada palavra aparece no ANEW ele tira a média onde o intervalo entre 1 e 5 como negativos e 5 e 9 como positivos.
 
+\medskip
 PANAS-t é uma escala psicométrica para a medição de sentimentos que permite detectar sentimentos do público sobre eventos utilizando uma base de dados extraída do Twitter \cite{Goncalves}.
 
+\medskip
 NRC Hashtag Sentiment Lexicon utiliza do NRC Emotion Lexicon que é uma coleção de sete léxicos, incluindo o Word-Emotion Association Lexicon. Cada léxico tem uma lista de palavras e suas associações com certas categorias de interesse, como emoções (alegria, tristeza, medo, etc.), sentimento (positivo e negativo) ou cor (vermelho, azul, preto, etc.) \cite{nrcc}, para utilização e analise de hashtags no Twitter.
 
+\medskip
 WAL é uma extensão do WordNet Domains, que inclui um subconjunto de conjunto de sinônimos adequados para representar conceitos afetivos correlacionados com palavras afetivas. Onde é atribuído um número de sintetizadores do WordNet um ou mais rótulos afetivos.
 
+\medskip
 VADER é uma ferramenta de análise de sentimentos baseada em léxicos e regras que é especificamente sintonizada com sentimentos expressos em mídias sociais.
 
+\medskip
 Abaixo, de uma forma generalizada de como funciona um método de análise de sentimentos:
 
 \begin{figure}[H]
@@ -344,26 +382,45 @@ Após a seleção do material, o mesmo será lido, analisado e interpretado, par
 
 A segunda etapa trata-se da parte prática da proposta deste trabalho a qual trata-se do desenvolvimento de um sistema de análise de sentimentos capaz de reconhecer textos agressivos perante a ideologias raciais.
 
+\bigskip 
 Para esta segunda etapa os seguintes materiais são usados:
 
+\smallskip
 Softwares:
 
-Python para a programação da inteligência artificial e ou deep learning.
+\smallskip
+\begin{enumerate}
+\item Python: Programação da inteligência artificial e deep learning.;
+\item PostgreSQL: Banco de dados para armazenar dados coletados;
+\item Microsoft Office - Excel: Para gerar as visualizações de métricas e gráficos.
+\end{enumerate}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.8\textwidth]{fluxograma.png}
-\caption{Fluxograma de desenvolvimento}
-\label{fig:Fig4}
-\end{figure}
-%Fonte: ResearchGate.
+\bigskip 
+A seguir o fluxo que iremos aplicar:
 
+\smallskip
+\begin{enumerate}
+\item Identificação: Textos contendo opiniões;
+\item Normalização: Estrutura normalizada de texto;
+\item Identificação dos Objetos: Posição dos objetos de interesse na estrutura;
+\item Identificação de Contexto: Lista de contexto (fragmentos de texto)
+\item Identificação dos Sentimentos: Classificar valores de sentimentos;
+\item Identificação de Grupos: Listagem de grupos de palavras onde será agregado valores de contexto e sentimento para cada grupo;
+\item Cálculo de Sentimentos: Valores totais de sentimentos agregados aos grupos;
+\item Armazenamento: Banco de dados contendo os valores dos cálculos;
+\item Análise: Relatórios, gráficos e outras métricas para a visualização dos resultados.
+\end{enumerate}
+
+\newpage
 Hardware:
 
+\smallskip
 O hardware necessário neste trabalho consiste de:
 
-Computador notebook com 12GB de memória e processador Intel i7-7th.
-
+\smallskip
+\begin{enumerate}
+\item Computador: Notebook com 12GB de memória e processador Intel i7-7th.
+\end{enumerate}
 \subsection{Cronograma}
 \begin{figure}[H]
 \centering
